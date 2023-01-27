@@ -1,44 +1,22 @@
-<!DOCTYPE Html>
-<Html Lang="En">
-<Head>
-<Meta Charset="UTF-8">
-<Meta Http-Equiv="X-UA-Compatible" Content="IE=Edge">
-<Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0">
-<Title>Password Gen..</Title>
-<Link Rel="Stylesheet" Href="Index.Css">
-</Head>
-<Body>
-<Div Class="Pw-Container">
-<Div Class="Pw-Header">
-<Div Class="Pw">
-<Span Id="Pw"> Password Here</Span>
-<Button Id="Copy">Copy</Button>
-</Div>
-</Div>
-<Div Class="Pw-Body">
-<Div Class="Form-Control">
-<Lable For="Length">Password Length</Lable>
-<Input Id="Len" Value="10" Type="Number" Min="8" Max="30">
-</Div>
-<Div Class="Form-Control">
-<Lable For="Upper">Contain Uppercase Letters</Lable>
-<Input Id="Upper" Type="Checkbox">
-</Div>
-<Div Class="Form-Control">
-<Lable For="Lower">Contain Lowercase Letters</Lable>
-<Input Id="Lower" Type="Checkbox">
-</Div>
-<Div Class="Form-Control">
-<Lable For="Number">Contain Numbers </Lable>
-<Input Id="Number" Type="Checkbox">
-</Div>
-<Div Class="Form-Control">
-<Lable For="Symbol">Contain Symbol</Lable>
-<Input Id="Symbol" Type="Checkbox">
-</Div>
-<Button Class="Generate" Id="Generate">Generate Paaword</Button>
-</Div>
-</Div>
-<Script Src="Index.Js"></Script>
-</Body>
-</Html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <h2>Random Password Generater</h2>
+      <input type="text" name="" placeholder="Password" id="password" readonly>
+
+      <table>
+        <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+        <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
